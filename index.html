@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="cloud2.jpeg">
+  
+  <div class="weather-container">
+    <div class="weather">
+      <h1 id="h1">Weather</h1>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Enter city name" id="city-input">
+      </div>
+
+      <!-- Weather Info -->
+      <div class="weather-info">
+        <h1 class="Temp">---NA---</h1>
+        <h2 class="city">--------</h2>
+      </div>
+
+      <!-- Icon and Condition -->
+      <div class="icon-container">
+        <img id="weather-icon" class="weth-icon" src="images/default.png" alt="weather icon">
+        <p id="condition">----</p>
+      </div>
+
+      <!-- Lower Weather Details -->
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="ri-water-percent-line icon"></i>
+          <div>
+            <h3 class="humidity-value">%</h3>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="ri-windy-line icon"></i>
+          <div>
+            <h3 class="wind-value">km/h</h3>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Button -->
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
